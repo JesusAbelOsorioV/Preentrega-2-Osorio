@@ -8,6 +8,8 @@
     width: 100px;
 }
 
+
+
 #imagen-principal{
     height: 400px;
     border-radius: 20px;
@@ -195,7 +197,7 @@ li a:hover{
 .grid-cat{
     display: grid;
     grid-template-columns: repeat(4, 300px);
-    grid-template-rows: 80px repeat(8, 210px);
+    grid-template-rows: 50px repeat(8, 210px);
     gap: 0px 0px;
     grid-template-areas: 
     "tit tit tit tit"
@@ -216,6 +218,7 @@ li a:hover{
     height: 60px;
     display: flex;
     justify-content: center;
+    
 }
 .musculacion{
     display: grid;
@@ -234,6 +237,7 @@ li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 .video{
@@ -241,12 +245,14 @@ li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .texto{
     grid-area: texto;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .en-casa{
   
@@ -266,14 +272,19 @@ li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .imagen-casa{
     grid-area: imagen-casa;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    
 }
 .text-casa{
     grid-area: text-casa;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .yoga{
@@ -412,7 +423,28 @@ li a:hover{
         
     }
     
-    
+    .musculacion{
+        grid-template-areas: 
+    ". tit-int ."
+    "video video ."
+    "video video ."
+    "video video .";
+    }
+    .yoga{
+        grid-template-areas: 
+    ". tit-yoga ."
+    "imagen-yoga imagen-yoga ."
+    "imagen-yoga imagen-yoga ."
+    "imagen-yoga imagen-yoga .";
+    }
+
+    .alto-impacto{
+        grid-template-areas: 
+        ". tit-imp ."
+        "imagen-imp imagen-imp ."
+        "imagen-imp imagen-imp ."
+        "imagen-imp imagen-imp ."; 
+    }
     
 }
    
