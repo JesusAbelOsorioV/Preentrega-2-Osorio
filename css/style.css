@@ -45,7 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 500px;
+    width: 100%;
     list-style: none;  
 }
 header label{
@@ -86,7 +86,6 @@ header label:hover{
     align-items: center;
     justify-content: space-around;
     height: 500px;
-    
     
 }
 .btn-info{
@@ -141,7 +140,7 @@ a{
 }
 
 video{
-    height: 400px;
+    height: 100%;
     border-radius: 20px;
     
 }
@@ -394,7 +393,8 @@ li a:hover{
     .menu {
         position: absolute;
         width: 50%;
-        margin-right: -50%;
+        /* margin-right: -50%; */
+        margin-top: -60%;
         transition: all 0.3s;
     }
     .menu ul{
