@@ -13,21 +13,26 @@
 
     
 }
+
+.ico-color{
+    color: #FFA132;
+    font-size: 40px;
+    
+}
 #imagen-principal:hover{
     border: 2px solid #fee140;
 }
 
-#sobre-nosotros{
-    height: 450px;
-    
-}
 #btn-menu{
     display: none;
 }
 
 .imagen{
-   height: 400px;
+   /* height: 400px; */
    border-radius: 20px;
+}
+.imagen-tam{
+    height: 400px;
 }
 
 .imagen:hover{
@@ -67,8 +72,34 @@ header label:hover{
     justify-content: space-around;
     align-items: center;
     align-content: space-between;
-    width: 450px;
+    width: 100%;
 
+}
+.suscrip__img{
+    display: flex;
+    flex-wrap: Wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+}
+
+.suscrip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+.div-video{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    padding: 40px;
+    
 }
 
 .pres-flex{
@@ -92,6 +123,7 @@ header label:hover{
     border-radius: 5px;
     background-color: rgb(43, 45, 46);
     padding: 6px;
+    color: #FFA132;
 }
 
 .btn-info:hover{
@@ -116,9 +148,13 @@ footer{
 }
 
 form{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     font-size: 25px;
     color: #FFA132;
+    height: 200px;
    
     
 }
@@ -136,7 +172,12 @@ a{
 }
 
 .largo {
+    border-radius: 7px;
+    background-color: aliceblue;
+    border: 2px solid #FFA132;
     width: 450px;
+    height: 30px;
+
 }
 
 video{
@@ -194,6 +235,11 @@ ul li a{
 li a:hover{
     background-color: #FFA132;
     color: #000; 
+}
+
+.listas{
+    flex-direction: column;
+    padding: 15px;
 }
 
 
@@ -394,12 +440,14 @@ li a:hover{
         position: absolute;
         width: 50%;
         /* margin-right: -50%; */
-        margin-top: -60%;
+        margin-top: -70%;
         transition: all 0.3s;
+        
     }
     .menu ul{
         padding-top: 55px;
         flex-direction: column;
+        
         
     }
     
@@ -418,25 +466,48 @@ li a:hover{
         display: none;
 
     }
+    .suscrip__btn{
+        display: none;
+    }
+
 }
 
 @media (max-width:609px){
+    .texto{
+        display: none;
+    }
+    .text-casa{
+        display: none;
+    }
+    .text-estira{
+        display: none;
+    }
+    .text-yoga{
+        display: none;
+    }
+    .text-imp{
+        display: none;
+    }
     .grid-cat{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 0px 0px;
         grid-template-areas: 
-        "tit tit . ."
-        "musculacion musculacion . ."
-        "musculacion musculacion . ."
-        "musculacion musculacion . ."
-        "yoga yoga . ."
-        "yoga yoga . ."
-        "yoga yoga . ."
-        "alto-impacto alto-impacto . ."
-        "alto-impacto alto-impacto . ."
-        "alto-impacto alto-impacto . .";
+        "tit tit"
+        "musculacion musculacion"
+        "musculacion musculacion"
+        "musculacion musculacion"
+        "yoga yoga"
+        "yoga yoga"
+        "yoga yoga"
+        "alto-impacto alto-impacto"
+        "alto-impacto alto-impacto"
+        "alto-impacto alto-impacto";
         
     }
     
     .musculacion{
+        
         grid-template-areas: 
     ". tit-int ."
     "video video ."
@@ -444,6 +515,7 @@ li a:hover{
     "video video .";
     }
     .yoga{
+        
         grid-template-areas: 
     ". tit-yoga ."
     "imagen-yoga imagen-yoga ."
@@ -452,12 +524,34 @@ li a:hover{
     }
 
     .alto-impacto{
+        
         grid-template-areas: 
         ". tit-imp ."
         "imagen-imp imagen-imp ."
         "imagen-imp imagen-imp ."
         "imagen-imp imagen-imp ."; 
     }
+    .en-casa{
+        display: none;
+    }
+    .estiramiento{
+        display: none;
+    }
     
 }
+
+@media (max-width:609px){
+    .div-video{
+        display: none;
+    }
+    .listas{
+        align-items: center;
+    }
+    #sobre-nosotros{
+        display: none;
+    }
+   
+}
+
+
    
